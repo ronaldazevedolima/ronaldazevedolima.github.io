@@ -5,13 +5,30 @@
         <meta charset="utf-8">
         <link href="https://fonts.googleapis.com/css?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
         <style>
-            body{
-            
+            body{                           
                 background-color: rgb(175, 179, 177);
             }
+            .lista1{
+                position: relative;                
+                top: 0;               
+                font-size: 27px;
+                background-color: rgb(1, 143, 76);               
+            }
+            .menu{                                
+                color: rgb(2, 27, 6);                  
+                font-size: 32px;                   
+                font-family: 'UnifrakturMaguntia', cursive; 
+            }
+            .menu ul li{
+                display: inline-block;
+            }
+            .menu ul li a{
+                text-decoration: none;
+                padding: 20px;
+                display: block;
+            }
             h1{
-               font-size: 55px;
-                background-color: rgb(1, 143, 76);
+               font-size: 55px;                
                 font-weight: bold, 1000;
                 color: rgb(0, 32, 6);
                 text-align: center;
@@ -22,7 +39,8 @@
                 text-align: center; 
                 font-size: 32px;  
                 background-color: rgb(1, 143, 76); 
-                font-family: 'UnifrakturMaguntia', cursive;       
+                font-family: 'UnifrakturMaguntia', cursive; 
+                border-radius: 100%;      
             }
             p{
                 text-align: center;
@@ -30,74 +48,159 @@
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             }
             .foto1{
-                border-radius: 20%;
-                             
+                border-radius: 20%;                             
+            }   
+            #section-gostos{
+                float: right;
+                max-width: 40%;
+                padding-right: 10%;
+                padding-top: 50px;
             }
-            .listas1{
+            #section-habilidades{
+                float: left;
+                max-width: 40%;
+                padding-left: 10%;
+                padding-top: 50px;               
+            }
+            #section-links{
+                padding-top: 30px;
+                clear: both;
+            }               
+         
+            
+            .listas2{
                 text-align: center, justify;
                 font-size: 27px;
             }
-            .foto2{
-                text-align: center;
+            .foto-apresentacao{
+                text-align: right;
                 font-size: 18px;
-                
+                margin-right: 100px;
+                               
             }
+            #apresentacao{
+                max-width: 40%;
+                margin-top: 100px;
+                margin-left: 90px;
+                float: left; 
+                font-weight: 100;              
+               
+            }
+            
+            #sda{
+                float: left;
+                max-width: 30%;
+            }
+            #witcher{
+                clear: both;
+                position: relative;
+                margin-left: 35%;
+                max-width: 30%;            
+               
+
+            }
+            #blind{
+                float: right;
+                clear: both;
+                margin-right: 20px;
+                max-width: 30%;
+            }
+            #section-momentos{
+                clear: both;
+            }
+            #fotos{
+                padding: 30px;
+                display: inline-block;
+                max-width: 25%;
+                margin-left: 70px;
+            }
+           
+            
             
             
         </style>
     </head>
-    <body>
-    
-    <h1>Ronald de Azevedo Lima</h1>
-        <div class="foto2">
-                <img id="pic1" class="foto1" src="https://lh3.googleusercontent.com/0xYYg-wehQH-il_JO6yJ87FGQ5qJmiaA5EJuUomdU2kllczqpfS3h1b9VN9nWKS-WQkL8URjg5miue5BjQpuX4Y7wOUjvO8FScVnZ9A8O-utcPr-sFC7wLg_cF0859hFj1LdP1KZEbCUP2jihkJhjXHqEnOL6EfUDGN4VRTJdm4d1VNGhiTymu-28uJoivE-qp5M4khRYcSXRHQbJg6-DelK4-vqidWsf_zjDQb6YpQzZaBWjUx2Ym_YIHXEAVGvTv7WtTpMldCf4CoRNeqCLP081oGYulQltlJI43JZJ27RdvS8XTZlg5XcxQ8gpKLLsR4UWFWPancVoA6xdWFsYUOafzprOGTAwAFr6yqHcanTTANCe4-PUNenCjQIOz7tzFLprLiIrlav64HjepTOkZlNOYmjUXpMwGyFry9kfKXD8zL0iaSn8oEjaSm8GJWBTgQgJrx2T2tJvqaYefcgw1W_ZCE0ggJMSjtKVwur_To4BFZmvvEMDslQRBdn9RaUPN0V1mNbMpvA_7X3KDDIJd2OFOCscPFVtjgV2clDwUti0x4F8w30ezgDy7E2-1ylGj1sz12bb5GPz6dJ23t567h--jkkpCoU2-nRQcDZx8igD2CLE_qc-0kV0UHN4-Wg1U2y9f-iaE3METLB7j8t1FhqT0ghXp1lCdb7CPtLUPaYUbNzMGzK1WZCi9pZGg=w533-h717-no" alt="Uma foto minha" width="300px">
-        </div>    
+    <body>    
+        <header>    
+             <nav class="menu">
+                <ul class="lista1">
+                    <li><a href="#descricao"> Descrição</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#gostos">O que gosto de fazer</a></li>
+                    <li><a href="#links">Tempo livre</a></li>
+                    <li><a href="#fotos">Momentos</a> </li>
+                    <li><a href="#pic1">Foto</a></li>
+                </ul>
+            </nav>
 
-        <h2 class="classe1">Indice</h2>
-             <ul class="listas1">
-                 <li><a href="#descricao"> Descrição</a></li>
-                 <li><a href="#habilidades">Habilidades</a></li>
-                 <li><a href="#gosto">O que gosto de fazer</a></li>
-                 <li><a href="#links">Links</a></li>
-                 <li><a href="#fotos">Fotos</a> </li>
-             </ul>
-        <h2 class="classe1" id="descricao">Descrição</h2>
-                    <p>Me chamo Ronald de Azevedo Lima, sou natural de florianopolis, tenho 34 anos,<br>
-                        sou casado e tenho uma filha de 3 anos.</p>
-                    <p>Sou formado em engenharia de Aquicultura mas nunca atuei na área.Tenho um curso<br>
-                        tecnico em cozinha e praticamente toda minha experiencia profissional é com gastronomia.</p>
-                    <p>Por diversos motivos resolvi largar minha profissão e hoje estou estudando para ser<br>
-                        desenvolvedor de software.</p>
-        <h2 class="classe1" id="habilidades">Habilidades</h2>
-             <ul class="listas1">
-                 <li><strong>Inglês</strong>: Avançado</li>
-                 <li><strong>Experiencia com trabalho em equipe</strong></li>
-                 <li><em>Hard working</em></li>
-                 <li>Experiencia em trabalhar sob pressão</li>
-                 <li>Versátil e adaptável</li>
-             </ul>  
-        <h2 class="classe1" id="gosto">O que gosto de fazer</h2> 
-                     <ul class="listas1">
-                  <li>Ficar com minha família</li>
-                  <li>Jogar video-game</li>
-                  <li>Ler</li>
-                  <li>Churrasco com <strong>cerveja</strong></li>
-              </ul>
+             <h1>Ronald de Azevedo Lima</h1>  
         
+        </header>
+            <section id="apresentacao">         
+                
+                        <p>Me chamo Ronald de Azevedo Lima, sou natural de florianopolis, tenho 34 anos,<br>
+                            sou casado e tenho uma filha de 3 anos.</p>
+                        <p>Sou formado em engenharia de Aquicultura mas nunca atuei na área.Tenho um curso<br>
+                            tecnico em cozinha e praticamente toda minha experiencia profissional é com gastronomia.</p>
+                        <p>Por diversos motivos resolvi largar minha profissão e hoje estou estudando para ser<br>
+                            desenvolvedor de software.</p>
+            </section> 
 
-        <h2 class="classe1" id="links">Links</h2>
-             <ol class="listas1">
-                 <li><a href="https://pt.wikipedia.org/wiki/O_Senhor_dos_An%C3%A9is" target="_blanck"> Livro Favorito : O senhor dos aneis</a></li> <img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Tloftr-logo.svg" alt="Logo de o senhor dos aneis" width="200px"><br><br>
-                 <li><a href="https://pt.wikipedia.org/wiki/The_Witcher_3:_Wild_Hunt" target="_blanck"> Jogo favorito : The witcher 3, the wild hunt</a></li> <img src="https://upload.wikimedia.org/wikipedia/pt/0/06/TW3_Wild_Hunt.png" alt="foto capa do jogo the witcher 3 wild hunt" width="100px"><br><br>
-                 <li><a href="https://pt.wikipedia.org/wiki/Blind_Guardian" target="_blanck"> Banda preferida : Blind Guardian</a></li> <img src="https://img.discogs.com/BbLfaF8fK8uVCnoK-8ntnQLgI0w=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-12520435-1536879247-1700.jpeg.jpg" alt="capa de um album do blind guardian" width="100px"><br><br>
-                 <li><a href="#pic1">Minha foto.</a></li>
-             </ol>  
-        <h2 class="classe1" id="fotos">Fotos</h2><br><br>
-        <div class="foto2">
-                <strong>Minha razão de existir</strong><br> <img src="https://lh3.googleusercontent.com/aBN5fmT75eb2L3vOJ0kYAPwxWbE5039FU2C4ucqL5H_SM5-s6_25Dc5G2zoB6-yQr9shzYrcV43x81jC6rolzI02UNNoVh1zYuPgzkYOnrLuqpDLxafZr53ImYHWWEzj4mByKPgY-nkURic4WIcMK9UIbfuwFC5WhOAvLCTlelvrZoOTZhFHKKHtHC4g96gMUQnCg48XhRxdz0dXRFAInYMSFh_9AXNSrZF5b_jLrMO7Vx8t6QvEq56MGbk0-dMUOhtiqgX21nyS9WBZfoHYEoXL2vN08R5n8FFCPnynRF7F5RwyaF84F2Wt8aApQqzxBxg4bi57lQJsbb3jCgBjz3oh1me03jxPy0CHkRhLY6qGiuhZKNKqrLLTrA3H1zRivx6eZvaoiWREtxLfEWMcR6Kj5zM3J6EHYoUM6Y6CIqkKyrVjYtOcSN2Vu2Egx3J3jqXuwPB_kklhdrMp_l0JKNd-dTlXQF9S4RnSVhc82IhjgLKNPn8v2iU1lBpqYIog2pTpB-l5q1Wp2_w5H_7g7eR-C0AZ5Xm4H58hnVMrPabbAi3fxKSBqfop6mjFOME3HcIfHjMzEnuYNYavlBqul3cC78Azk9Lmej-Rh9M7dq59P80xeER2gbAVRi4kVVvOH0mZsuGj580S51EKyIcqoW6BN5WdQn7M8Nee9KYTXq3rg-6bpnT3bx4afYm_5w=w575-h766-no" alt="Foto da minha filha" width="250px"><br><br>             
-                <strong>A gente no carnaval</strong><br> <img src="https://lh3.googleusercontent.com/Sv5rJYKdvIRYhUaUqnREgCOyW9lF1xd80yhYT_6I7FakTxgzNFbVR3_mP70aIyupZXwVYxvwuyIUJsu3sFXtVGCwK-iWdT-rUZe2uFeySJ3KutRZOYM881mjCLxxSh7-B8z1b8KgzSgW_n0-oqqFpF_TOOHbIAWxlYU93I-H74a3Ly_KbzfWolUSTbWhNqDW43x4MjCNR2OkQmaARz7fViD9CufHWg6bkdSq3HHfgT4jBpCz8_rUdP-8dYkY_j_-aRL2K7Ut0SszFo7d6VjN01LsPwy-6s-ZZglwKQS8-VrnsnKEvUyj1XKEI4LMz4oLBLJOLQXoMS0LdddEIEEQf-X9lvxC8ir_1aH0RSfJM3E840tNvZzW-qNmydl4dCy8cyrrxkqNy2XNnMXJmYyxyOLRZK-ThoQ6-raCCT2koJpb5ubOOQPzR9JNhVXjKgZbbobM8aFt8tFU-75zr5tqTjEXKFbES8zNCBljZyuca-R46HsYPFWFX02cTuL9c_a0pJbPxeFd6S6qqT77MPrBF3x5bajL3MpEISVFVAanTiBKLhizYxRO4LA2c0UX_pvthf4LMtxBRhUxfUgUroVJGgCpMJy-To-ECvXJe6x_FgEzb_X6g-oB9rbDntNTv8IrARXRSm3Cjpa71bdaRyFeBiajFuJu6S4Hxb6yshqQxb_at7g_rWs4pA1rqLE-ug=w1032-h766-no" alt="minha familia no carnaval" width="250px"><br><br>
-                <strong>Um dia em casa</strong><br> <img src="https://lh3.googleusercontent.com/Njcc1TIrlU2gf8tfGvj_nUr4ziqfieAU8Xtb5K4HIDQrdHQTQbQg-0Nt5oz-8X09AW4CnlgWl-GaTz6S_fotC7cJF1ePqHerTb2A2-gZ_iQNJidfZWT5HLA6uKIN2e3nGSpsN6oO4JtEjviCvflIH250JYKvRbE8eiIZyr1vPLvqRIeO28DkmpAybZrZaaGTCaOzm7s0AP1_1kVA9qjKfDvcp4iNzei5MO9LJCL6nYng7MRfNWqrFbAN5unJwhaK0pp_YfS48x29I42KN1tLa3VZArJi7G8FAep90bjIdvyOwJl8AX3ZdW-viXR-Wkf-mrht8nitEP4HcuSWZCOerQk1eh1uMQLiJc6bCjaeGwKCTGxr9quqLLtLx3h3P3uLUV4ZpgBTId4hGZkAtZFcTlfycUVd4AX9d9P0iWALewM3j4oNoqKmvrxATG09wABVGiiSEfunGgsLkj3J13FgHAn8_6bnmL0iv5fXtIoYDCbFKQubzTseR09FTqPuQzlrYaS9OR5VSNyHTTFu8tkPIzV4uWO7AEPPzWlEY9I0CV1Yvq5bJtRJ8I-zgWsthr9CLDrRhgIX7dQlzr8U54iKLBUvpgXjBO7STRUB2XRJCB3yQ8bnfZH3XN6B2OSnGV16BNsLYhW6xr87RJcIDHSLoy8aa86aJ8MI6fBhuxLUPl5qf-0LEu7t5oBvZq1vng=w1032-h766-no" alt="minha familia em casa" width="250px"><br><br>
-                <strong>Lorena e vovó</strong><br> <img src="https://lh3.googleusercontent.com/YFc6fXdJjD7LvmSa0aV-DEXqjAocT954-DzRtyGzn_4Odok5Jx8sKF20OEGCdsXkxsgaTzYVERp4R_kHgPwFhbe7mUXCqXoPjGo7l9cI2ov1vgy4s8dL0VIQwKJdPTnj0n3fnBU51aBko-dWgGlO9JbyzVEbq-ZqDL9IMcgDeZZJ9SQqeINSffwXQLq3KLPQUgixPPxVkshePjoEN8_kq13WrRBs1tpW6iM0wN-VzNt7bdMmhZIpsw14WBNesiaghAAc9E0-VY_kcsf0F1X1y7D34-X2s3y6bssQ9j6rg4EFNUGAfVENjBF9h8kdN_oKyU7C9KggMgNQyJVkaWfw0G0L8skQ5kYMg0l8Yef9oIDT2n5qK0Wq0uMRoFZ8g7sfDXZBK3EtH5m91CWl_zV2mo74ai45DsexjjoftBjCH7I1nsdpjqQB4EV4cHRpOlZ9Y3Bli3qAZB5yPtkWVuCjzvKKAbxCtWcmHoPJtE8UNMWdiFbTlwXgdGsLnl0d8S6U76W4vdD3wshbku1UO3KLQdxzNLRptFE45RAky8ZVpovvHoR5HdnumiYTCZIWda7yQB3HItipqiE0C4R1QW33gC3GYtObYg_kWC9SKg6ZxPgRSBCPwSzlTO7J51fM487AKFbCfx4reZSUDo3TrAQ2dwLm5vEZKvjBmgIiXw_WI508-1ofYymm7K-8ddga=w575-h766-no" alt="minha filha e minha mae" width="250px"><br><br>
-        </div>        
+         <div class="foto-apresentacao">
+            <img id="pic1" class="foto1" src="fotos/eu.jpg" alt="Uma foto minha" width="400px">
+         </div> 
+        
+        <section id="section-habilidades"> 
+            <h2 class="classe1" id="habilidades">Habilidades</h2>
+                <ul class="listas2">
+                     <li><strong>Inglês</strong>: Avançado</li>
+                     <li><strong>Experiencia com trabalho em equipe</strong></li>
+                     <li><em>Hard working</em></li>
+                     <li>Experiencia em trabalhar sob pressão</li>
+                     <li>Versátil e adaptável</li>
+                 </ul> 
+        </section>
+        <section id="section-gostos">
+            <h2 class="classe1" id="gostos">O que gosto de fazer</h2> 
+                <ul class="listas2">
+                     <li>Ficar com minha família</li>
+                     <li>Jogar video-game</li>
+                     <li>Ler</li>
+                     <li>Churrasco com <strong>cerveja</strong></li>
+                 </ul>
+        </section>
+        
+        <section id="section-links">
+            <h2 class="classe1" id="links">Tempo livre</h2>
+                <ol class="listas2">
+                    <div id="sda">
+                        <li><a href="https://pt.wikipedia.org/wiki/O_Senhor_dos_An%C3%A9is" target="_blanck"> Livro Favorito : O senhor dos aneis</a></li> <img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Tloftr-logo.svg" alt="Logo de o senhor dos aneis" width="200px"><br><br>
+                    </div>
+                    <div id="witcher">
+                        <li><a href="https://pt.wikipedia.org/wiki/The_Witcher_3:_Wild_Hunt" target="_blanck"> Jogo favorito : The witcher 3, the wild hunt</a></li> <img src="https://upload.wikimedia.org/wikipedia/pt/0/06/TW3_Wild_Hunt.png" alt="foto capa do jogo the witcher 3 wild hunt" width="100px"><br><br>
+                    </div>
+                    <div id="blind">
+                         <li><a href="https://pt.wikipedia.org/wiki/Blind_Guardian" target="_blanck"> Banda preferida : Blind Guardian</a></li> <img src="https://img.discogs.com/BbLfaF8fK8uVCnoK-8ntnQLgI0w=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-12520435-1536879247-1700.jpeg.jpg" alt="capa de um album do blind guardian" width="100px"><br><br>
+                     </div>
+                   
+                </ol>  
+        </section> 
+        <section id="section-momentos">   
+            <h2 class="classe1" >Momentos</h2><br><br>
+        <div id="momentos">  
+            <div id="fotos">          
+                <strong>Minha razão de existir</strong><br> <img src="fotos/lorena11.jpg" alt="Foto da minha filha" width="250px"><br><br> 
+            </div>
+            <div id="fotos">
+                <strong>A gente no carnaval</strong><br> <img src="fotos/familia1.jpg" alt="minha familia no carnaval" width="250px"><br><br> 
+            </div>
+            <div id="fotos">
+                <strong>Um dia em casa</strong><br> <img src="fotos/familia2.jpg" alt="minha familia em casa" width="250px"><br><br>
+            </div>
+            <div id="fotos">
+                <strong>Lorena e vovó</strong><br> <img src="fotos/vovo2.jpg" alt="minha filha e minha mae" width="250px"><br><br>
+            </div>            
+        </div>
+        </section>        
     </body>
 </html>
